@@ -1,9 +1,11 @@
-import { IConfig } from '../../models/config.interface';
+import { IConfig } from "../../models/config.interface";
 
 export interface IConfigState {
-    config: IConfig;
+  adminName: string;
+  permission?: string[];
 }
 
 export const initialConfigState: IConfigState = {
-    config: null
-}
+  adminName: null,
+  permission: []
+};
